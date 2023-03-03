@@ -1,0 +1,26 @@
+.homeTop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.section {
+  padding: 50px 100px;
+}
+.HomeTopTitle {
+  font-weight: 600;
+  line-height: 49px;
+  color: black;
+  font-size: 27px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.HomeTopText {
+  width: 80%;
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+}
+.ytVideos {
+  display: flex;
+}

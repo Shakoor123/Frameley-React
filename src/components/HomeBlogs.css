@@ -1,0 +1,53 @@
+.homeBlogs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.homeBlog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.homeBlogTexts {
+  flex: 7;
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.homeblogImages {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeBlogTitle {
+  font-weight: 600;
+  line-height: 49px;
+  color: black;
+  font-size: 27px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.homeBlogText {
+  width: 80%;
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+}
+.homeBlogimage {
+  width: 80%;
+  border-radius: 10px;
+}
+.GetInTuch {
+  cursor: pointer;
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1.3px;
+}
+.bggGray {
+  background-color: rgba(211, 211, 211, 0.318);
+}
