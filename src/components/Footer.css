@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+}
+.footerColum {
+  width: 33%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footerTitle {
+  font-style: 18px;
+  color: black;
+  font-weight: 600;
+}
+.footerText {
+  font-style: 16px;
+  color: gray;
+}
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footerColum {
+    width: auto;
+  }
+}

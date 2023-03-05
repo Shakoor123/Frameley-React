@@ -22,7 +22,7 @@ const HomeBlogs = () => {
           </span>
         </div>
       </div>
-      <div className="homeBlog">
+      <div className="homeBlog rv">
         <div className="homeBlogTexts">
           <span className="homeBlogTitle">Thin & Light Frames</span>
           <span className="homeBlogText">
@@ -57,7 +57,7 @@ const HomeBlogs = () => {
           </span>
         </div>
       </div>
-      <div className="homeBlog">
+      <div className="homeBlog rv">
         <div className="homeBlogTexts">
           <span className="homeBlogTitle">
             Looking for Custom Sizing or Bulk Pricing?

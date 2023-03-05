@@ -12,6 +12,11 @@ export default function Carocel() {
     }
   }
 
+  let urls = [
+    "https://frameley.com/resources/wp-content/uploads/2023/03/frameley-banner.png",
+    "https://frameley.com/resources/wp-content/uploads/2023/01/frameley.jpg.webp",
+    "https://frameley.com/resources/wp-content/uploads/2022/12/pexels-medhat-ayad-383568.jpg",
+  ];
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -33,12 +38,10 @@ export default function Carocel() {
           className="slideshowSlider"
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
-          {colors.map((backgroundColor, index) => (
-            <div
-              className="slide"
-              key={index}
-              style={{ backgroundColor }}
-            ></div>
+          {urls.map((url, index) => (
+            <div className="slide" key={index}>
+              <img src={url} alt="" className="slideImage" />
+            </div>
           ))}
         </div>
 

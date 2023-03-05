@@ -5,6 +5,7 @@ import "./Home.css";
 import HomeCards from "../components/HomeCards";
 import HomeBlogs from "../components/HomeBlogs";
 import YoutubeEmbed from "../components/YoutubeVideos";
+import Footer from "../components/Footer";
 export default function Home() {
   let ytIds = [
     {
@@ -107,6 +108,7 @@ export default function Home() {
           </span>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

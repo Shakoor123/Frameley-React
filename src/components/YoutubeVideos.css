@@ -2,8 +2,11 @@
   overflow: hidden;
   position: relative;
   height: 0;
-  height: 210px;
+  height: 280px;
   width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-responsive iframe {
@@ -15,4 +18,10 @@
 .ytVideo {
   width: 95%;
   height: 300px;
+}
+@media screen and (max-width: 450px) {
+  .video-responsive {
+    width: 95%;
+    align-self: center;
+  }
 }

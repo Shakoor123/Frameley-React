@@ -38,3 +38,10 @@
 .slideshowDot.active {
   background-color: #6a0dad;
 }
+.slideImage {
+  height: 520px;
+  align-self: center;
+  justify-self: center;
+  object-fit: contain;
+  width: 100%;
+}

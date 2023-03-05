@@ -1,6 +1,11 @@
 .homeCards {
-  width: 100%;
   display: flex;
-  align-items: center;
   gap: 10px;
+  height: max-content;
+}
+@media screen and (max-width: 450px) {
+  .homeCards {
+    flex-direction: column;
+    align-items: center;
+  }
 }

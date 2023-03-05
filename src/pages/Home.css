@@ -24,3 +24,18 @@
 .ytVideos {
   display: flex;
 }
+@media screen and (max-width: 450px) {
+  .section {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .HomeTopText {
+    width: 100%;
+  }
+  .ytVideos {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
