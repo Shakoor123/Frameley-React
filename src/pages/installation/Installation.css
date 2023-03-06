@@ -1,0 +1,9 @@
+.installationItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.installationTexts {
+  display: flex;
+  flex-direction: column;
+}

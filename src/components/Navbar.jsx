@@ -12,13 +12,24 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
-          &times;
-        </a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div className="sideNavTop">
+          <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+            &times;
+          </a>
+          <a href="#">Home</a>
+          <a href="#">DeSign Your Frame</a>
+          <a href="#">Custom Sizing/Bulk Orders</a>
+          <a href="#">FAQs</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Installation & Care</a>
+        </div>
+        <div className="sideNavBottom">
+          <span>👤</span>
+
+          <span className="SNVText">Log In</span>
+          <span>│</span>
+          <span className="SNVText">Sign Up</span>
+        </div>
       </div>
       <span style={{ cursor: "pointer", fontSize: 30 }} onClick={openNav}>
         &#9776;

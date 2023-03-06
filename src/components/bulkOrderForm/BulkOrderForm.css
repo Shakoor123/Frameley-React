@@ -1,0 +1,42 @@
+.bulkOrderForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 238, 238);
+}
+.formContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.Forminput {
+  width: 250px;
+  font-size: 16px;
+  height: 40px;
+  padding-left: 10px;
+}
+.formTopSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.formTop {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.formTextArea {
+  width: 100%;
+  height: 150px;
+}
+.submit {
+  background-color: #8f116f;
+  color: white;
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  font-size: 16px;
+}

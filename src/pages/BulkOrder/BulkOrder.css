@@ -1,0 +1,9 @@
+.bulkOrderTitle {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+}
+.bulkOrderText {
+  color: gray;
+  font-size: 16px;
+}

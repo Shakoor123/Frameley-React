@@ -2,6 +2,7 @@
   margin: 0 auto;
   overflow: hidden;
   max-width: 100%;
+  margin-top: 20px;
 }
 
 .slideshowSlider {
@@ -36,7 +37,7 @@
 }
 
 .slideshowDot.active {
-  background-color: #6a0dad;
+  background-color: #951d76;
 }
 .slideImage {
   height: 520px;
