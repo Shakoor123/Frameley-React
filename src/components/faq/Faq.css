@@ -24,7 +24,16 @@
   transition: all 2s inherit;
   padding-left: 50px;
   color: gray;
+  font-size: 16px;
 }
 .faq-section {
-  width: 500px;
+}
+@media screen and (max-width: 450px) {
+  .faqTitle {
+    width: 90%;
+  }
+  .faq.active p {
+    padding: 0;
+    width: 100%;
+  }
 }

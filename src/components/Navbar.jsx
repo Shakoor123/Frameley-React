@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 export default function Navbar() {
   function openNav() {
@@ -16,25 +17,29 @@ export default function Navbar() {
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             &times;
           </a>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="#">DeSign Your Frame</a>
-          <a href="#">Custom Sizing/Bulk Orders</a>
-          <a href="#">FAQs</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Installation & Care</a>
+          <a href="/bulk-order">Custom Sizing/Bulk Orders</a>
+          <a href="/faqs">FAQs</a>
+          <a href="/contact-us">Contact Us</a>
+          <a href="/installation">Installation & Care</a>
         </div>
-        <div className="sideNavBottom">
-          <span>👤</span>
+        <Link to={"/auth"}>
+          <div className="sideNavBottom">
+            <span>👤</span>
 
-          <span className="SNVText">Log In</span>
-          <span>│</span>
-          <span className="SNVText">Sign Up</span>
-        </div>
+            <span className="SNVText">Log In</span>
+            <span>│</span>
+            <span className="SNVText">Sign Up</span>
+          </div>
+        </Link>
       </div>
       <span style={{ cursor: "pointer", fontSize: 30 }} onClick={openNav}>
         &#9776;
       </span>
-      <img src="https://frameley.com/Logo.png" className="navLogo" alt="" />
+      <Link to={"/"}>
+        <img src="https://frameley.com/Logo.png" className="navLogo" alt="" />
+      </Link>
       <div className="navChat">
         <img
           src="https://frameley.com/images/comment.png"

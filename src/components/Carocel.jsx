@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Carocel.css";
-
 export default function Carocel() {
   const colors = ["#0088FE", "#00C49F", "#FFBB28"];
   const delay = 2500;
@@ -13,9 +12,9 @@ export default function Carocel() {
   }
 
   let urls = [
-    "https://frameley.com/resources/wp-content/uploads/2023/03/frameley-banner.png",
-    "https://frameley.com/resources/wp-content/uploads/2023/01/frameley.jpg.webp",
-    "https://frameley.com/resources/wp-content/uploads/2022/12/pexels-medhat-ayad-383568.jpg",
+    "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=2000",
+    "https://images.pexels.com/photos/1173651/pexels-photo-1173651.jpeg?auto=compress&cs=tinysrgb&w=2000",
+    "https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg?auto=compress&cs=tinysrgb&w=2000",
   ];
   useEffect(() => {
     resetTimeout();

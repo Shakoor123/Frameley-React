@@ -27,10 +27,14 @@
 @media screen and (max-width: 450px) {
   .section {
     padding: 20px;
-    font-size: 25px;
+    font-size: 16px;
   }
   .HomeTopText {
     width: 100%;
+  }
+  .HomeTopTitle {
+    font-size: 25px;
+    line-height: 35px;
   }
   .ytVideos {
     flex-direction: column;

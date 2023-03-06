@@ -2,8 +2,78 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 600px;
 }
 .installationTexts {
+  flex: 1;
   display: flex;
   flex-direction: column;
+}
+.installationVideos {
+  flex: 1;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.installationVideo {
+  width: 80%;
+}
+.installationDatas {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.installationTitle {
+  font-size: 22px;
+  font-weight: 600;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  padding: 0 20px;
+  width: fit-content;
+}
+.installationRev {
+  flex-direction: row-reverse;
+}
+.installationRev > .installationTexts {
+  align-items: flex-end;
+}
+.installationRev > .installationVideos {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.installationText {
+  font-size: 16px;
+  color: rgb(82, 76, 76);
+}
+@media screen and (max-width: 450px) {
+  .installationItem {
+    flex-direction: column;
+    height: auto;
+    gap: 25px;
+  }
+  .installationDatas {
+    width: 100%;
+  }
+  .installationVideos {
+    align-items: center;
+    justify-content: center;
+  }
+  .installationBody {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .installationRev > .installationTexts {
+    align-items: flex-start;
+  }
+  .installationRev > .installationVideos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

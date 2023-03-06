@@ -2,7 +2,7 @@
   margin: 0 auto;
   overflow: hidden;
   max-width: 100%;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .slideshowSlider {
@@ -43,6 +43,14 @@
   height: 520px;
   align-self: center;
   justify-self: center;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .slide,
+  .slideImage {
+    height: 300px;
+    object-fit: cover;
+  }
 }

@@ -40,3 +40,8 @@
   letter-spacing: 1.1px;
   font-size: 16px;
 }
+@media screen and (max-width: 450px) {
+  .formTopSection {
+    flex-direction: column;
+  }
+}

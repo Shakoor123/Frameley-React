@@ -23,3 +23,9 @@
 .cudText {
   font-size: 16px;
 }
+@media screen and (max-width: 450px) {
+  .cud {
+    display: flex;
+    flex-direction: column;
+  }
+}
