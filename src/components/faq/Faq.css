@@ -22,11 +22,18 @@
   max-height: 1000px;
   display: inline;
   transition: all 2s inherit;
-  padding-left: 50px;
-  color: gray;
+
+  color: #951d76;
   font-size: 16px;
 }
 .faq-section {
+  background-color: rgb(236, 236, 236);
+}
+.faqHead {
+  font-size: 45px;
+}
+.faq.active .faqTitle {
+  color: #951d76;
 }
 @media screen and (max-width: 450px) {
   .faqTitle {

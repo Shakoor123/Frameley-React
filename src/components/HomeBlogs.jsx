@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomeBlogs.css";
 const HomeBlogs = () => {
   return (
@@ -67,7 +68,9 @@ const HomeBlogs = () => {
             this form with the details so that we can get back to you regarding
             your requirements. We're always just a call or a message away!
           </span>
-          <span className="GetInTuch">Get In Tuch</span>
+          <Link to={"/bulk-order"} style={{ textDecoration: "none" }}>
+            <span className="GetInTuch">Get In Tuch</span>
+          </Link>
         </div>
         <div className="homeblogImages">
           <img

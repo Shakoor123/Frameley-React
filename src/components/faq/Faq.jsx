@@ -37,11 +37,26 @@ function Faq() {
       answer:
         "The process is super simple, upload your image, choose your size/color for the frame and check out! You can get started by clicking here.",
     },
+    {
+      question: "How long does shipping take?",
+      answer:
+        "We take a maximum of 48 hours to handcraft your order and get it shipped and on its way. Once its on the way, the items are then handed over to the courier partner who may take up to 5 days to Metro cities and up to 12 days to other cities. The delivery time is completely dependent on your distance from our HQ in Bangalore.",
+    },
+    {
+      question: "Do you offer Cash on Delivery?",
+      answer:
+        "Unfortunately due to the custom nature of the products, we do not accept Cash on Delivery orders.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer:
+        "Yes, please get in touch with us by WhatsApp or Instagram DM’s to book your order for international shipping. Extra charges may apply for shipping/packaging.",
+    },
   ];
 
   return (
     <div className="faq-section section">
-      <h2>Frequently Asked Questions</h2>
+      <h2 className="faqHead">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div
           key={index}
