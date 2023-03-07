@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.sidenav a {
+.p {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
@@ -23,7 +23,7 @@
   transition: 0.3s;
 }
 
-.sidenav a:hover {
+.p:hover {
   color: #951d76;
 }
 

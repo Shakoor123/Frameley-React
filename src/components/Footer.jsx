@@ -1,16 +1,26 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import CopyRight from "./copyRight/CopyRight";
 import "./Footer.css";
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="footer section">
         <div className="footerColum">
           <span className="footerTitle">Need Help?</span>
-          <span className="footerText">➤FAQs</span>
-          <span className="footerText">➤Contact Us</span>
-          <span className="footerText">➤Chat With Us</span>
-          <span className="footerText">➤Installation & Care</span>
+          <Link to={"/faqs"} style={{ textDecoration: "none" }}>
+            <span className="footerText">➤FAQs</span>
+          </Link>
+          <Link to={"/contact-us"} style={{ textDecoration: "none" }}>
+            <span className="footerText">➤Contact Us</span>
+          </Link>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <span className="footerText">➤Chat With Us</span>
+          </Link>
+          <Link to={"/installation"} style={{ textDecoration: "none" }}>
+            <span className="footerText">➤Installation & Care</span>
+          </Link>
         </div>
         <div className="footerColum">
           <span className="footerTitle">Legal Stuff</span>
@@ -21,9 +31,24 @@ const Footer = () => {
         </div>
         <div className="footerColum">
           <span className="footerTitle">Need Help?</span>
-          <span className="footerText">➤Instagram</span>
-          <span className="footerText">➤Facebook</span>
-          <span className="footerText">➤Twitter</span>
+          <Link
+            to={"https://instagram.com/yourframeley"}
+            style={{ textDecoration: "none" }}
+          >
+            <span className="footerText">➤Instagram</span>
+          </Link>
+          <Link
+            to={"https://facebook.com/yourframeley"}
+            style={{ textDecoration: "none" }}
+          >
+            <span className="footerText">➤Facebook</span>
+          </Link>
+          <Link
+            to={"https://twitter.com/yourframeley"}
+            style={{ textDecoration: "none" }}
+          >
+            <span className="footerText">➤Twitter</span>
+          </Link>
         </div>
       </div>
       <CopyRight />

@@ -7,6 +7,7 @@ import Installation from "./pages/installation/Installation";
 import Faqs from "./pages/faqs/Faqs";
 import Home from "./pages/Home";
 import Athentication from "./pages/athentication/Athentication";
+import Design from "./pages/design/Design";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/installation" element={<Installation />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/auth" element={<Athentication />} />
+          <Route path="/design" element={<Design />} />
         </Routes>
       </BrowserRouter>
     </div>

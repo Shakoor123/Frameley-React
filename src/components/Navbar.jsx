@@ -17,30 +17,48 @@ export default function Navbar() {
           <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
             &times;
           </a>
-          <a href="/">Home</a>
-          <a href="#">DeSign Your Frame</a>
-          <a href="/bulk-order">Custom Sizing/Bulk Orders</a>
-          <a href="/faqs">FAQs</a>
-          <a href="/contact-us">Contact Us</a>
-          <a href="/installation">Installation & Care</a>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <span className="p">Home</span>
+          </Link>
+          <Link to={"/design"} style={{ textDecoration: "none" }}>
+            <span className="p">DeSign Your Frame</span>
+          </Link>
+          <Link to={"/bulk-order"} style={{ textDecoration: "none" }}>
+            <span className="p">Custom Sizing/Bulk Orders</span>
+          </Link>
+          <Link to={"/faqs"} style={{ textDecoration: "none" }}>
+            <span className="p">FAQs</span>
+          </Link>
+          <Link to={"/contact-us"} style={{ textDecoration: "none" }}>
+            <span className="p">Contact Us</span>
+          </Link>
+          <Link to={"/installation"} style={{ textDecoration: "none" }}>
+            <span className="p">Installation & Care</span>
+          </Link>
         </div>
-        <Link to={"/auth"}>
+        <Link to={"/auth"} style={{ textDecoration: "none" }}>
           <div className="sideNavBottom">
             <span>👤</span>
 
-            <span className="SNVText">Log In</span>
+            <span className="SNVText p">Log In</span>
             <span>│</span>
-            <span className="SNVText">Sign Up</span>
+            <span className="SNVText p">Sign Up</span>
           </div>
         </Link>
       </div>
       <span style={{ cursor: "pointer", fontSize: 30 }} onClick={openNav}>
         &#9776;
       </span>
-      <Link to={"/"}>
+      <Link to={"/"} style={{ textDecoration: "none" }}>
         <img src="https://frameley.com/Logo.png" className="navLogo" alt="" />
       </Link>
-      <div className="navChat">
+      <div
+        className="navChat"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          load();
+        }}
+      >
         <img
           src="https://frameley.com/images/comment.png"
           alt=""
